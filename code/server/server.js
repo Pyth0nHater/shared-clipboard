@@ -7,7 +7,7 @@ const PORT = config.get('serverPort')
 
 const start = async () => {
     try{
-        await mongoose.connect
+        await mongoose.connect(config.get(dbUrl))
 
 
 

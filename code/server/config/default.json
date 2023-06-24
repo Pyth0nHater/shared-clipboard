@@ -1,0 +1,4 @@
+{
+    "serverPort" : 3000,
+    "dbUrl" : "mongodb+srv://Pyth0nHater:123123123@shared-clipboard.kr0um3d.mongodb.net/?retryWrites=true&w=majority"
+}
