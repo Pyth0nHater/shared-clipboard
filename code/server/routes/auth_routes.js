@@ -10,7 +10,7 @@ const router = new Router()
 router.post("/registration",
         [
             check("email", "Uncorrect email").isEmail(),
-            check("password", "Password length from 7 to 20").isLength({min:7, max:20})
+            check("password", "Password length from 6 to 20").isLength({min:6, max:20})
         ],
     async (req, res) => {
     try{
@@ -28,8 +28,7 @@ router.post("/registration",
         }
 
         const hashPassword = await bcrypt.hash(password, 8)
-        const newUser = new User({email, password: hashPassword})
-        const user = new User({email})
+        const user = new User({email, password: hashPassword})
         await user.save()
 
         return res.json({message: "New user was created"})
