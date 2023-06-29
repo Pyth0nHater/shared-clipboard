@@ -1,0 +1,97 @@
+.text_typing{
+    
+    text-align: center;
+    width: 455px;
+    font-size: 50px;
+    font-family: 'VT323';
+    animation: typing 3s steps(25), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid;
+}
+  
+@keyframes typing {
+    from {
+      width: 0
+    }
+}
+      
+@keyframes blink {
+    80% {
+      border-color: transparent
+    }
+}
+
+.welcome_text {
+    margin-top: 150px;
+    display: grid;
+    place-items: center;
+}
+
+.bottom_rectangle{
+    height: 45vh;
+    width: 100%;
+    background: #C4C4C4;
+}
+
+
+.line_center{
+    margin-top: 217px;
+    width: 100%;
+    height: 5px;
+    background: black;
+}
+
+.rectangle_download{
+    align-items: center;
+    justify-content: center;
+    margin-left: 280px;
+    margin-top: 70px;
+    width: 527px;
+    height: 270px;
+    border: 5px solid #000;
+    background: #FFF;
+    box-shadow: 10px 10px 4px 0px #000;
+}
+
+.gray_rectangle_download{
+    margin-top: -4px;
+    margin-left: -4px;
+    width: 526px;
+    height: 61px;
+    flex-shrink: 0;
+    background: #C4C4C4;
+    border: #000 solid 5px;
+}
+
+.rectangle_download:hover {
+    transform: scale(1.03);
+}
+
+.rectangle_download2:hover {
+    transform: scale(1.03);
+}
+
+.rectangle_download2{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1070px;
+    margin-top: -280px;
+    width: 527px;
+    height: 270px;
+    border: 5px solid #000;
+    background: #FFF;
+    box-shadow: 10px 10px 4px 0px #000;
+}
+
+.gray_rectangle_download2{
+    position: absolute;
+    margin-top: -4px;
+    margin-left: -4px;
+    width: 526px;
+    height: 61px;
+    flex-shrink: 0;
+    background: #C4C4C4;
+    border: #000 solid 5px;
+}

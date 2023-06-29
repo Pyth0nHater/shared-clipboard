@@ -9,14 +9,22 @@ const Login = () =>{
     const [password, setPassword] = useState("")
     const dispatch = useDispatch()
     return(
-        <div className="registartion">
-            <div className="">email</div>
-            <Input value={email} setValue = {setEmail} type="text" />
+        <div className="login">
+            <div className="rectangle">
+                <div className="gray_rectangle">
+                    <div className="circle"></div>
+                    <div className="circle2"></div>
+                    </div>
+                <div className="email">Email</div>
+                <Input value={email} setValue = {setEmail} type="text" className="input"/>
 
-            <div className="">password</div>
-            <Input value={password} setValue = {setPassword} type="password"/>
+                <div className="password">Password</div>
+                <Input value={password} setValue = {setPassword} type="password" className="input"/>
 
-            <button className="sinin" onClick={() => dispatch(login(email, password))}>Sing in</button>
+                <div>
+                    <button className="signin" onClick={() => dispatch(login(email, password))}>Sign in</button>
+                </div>
+            </div>
         </div>
     )
 }

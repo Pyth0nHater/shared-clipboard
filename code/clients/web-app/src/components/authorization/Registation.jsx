@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { registration } from "../../action/user";
 import Input from "../input/Input";
+import './authorization.css'
 
 const Registartion = () =>{
     const [email, setEmail] = useState("")
@@ -8,22 +9,29 @@ const Registartion = () =>{
     const [repeatPassword, setRepeatPassword] = useState("")
     return(
         <div className="login">
-            <div className="">email</div>
-            <Input value={email} setValue = {setEmail} type="text" />
+            <div className="rectangle">
+                <div className="gray_rectangle">
+                    <div className="circle"></div>
+                    <div className="circle2"></div>
+                    </div>
+            <div className="Email">Email</div>
+            <Input value={email} setValue = {setEmail} type="text" className="input1" />
 
-            <div className="">password</div>
-            <Input value={password} setValue = {setPassword} type="password"/>
+            <div className="Password">Password</div>
+            <Input value={password} setValue = {setPassword} type="password" className="input1"/>
 
-            <div className="">repeat password</div>
-            <Input type="password" value={repeatPassword} setValue = {setRepeatPassword} />
-
-            <button className="sinup" onClick={()=>{
-                if(password !== repeatPassword){
-                    alert("pass not the same")
-                }else{
-                    registration(email, password)
-                }
-            }}>Sing up</button>
+            <div className="Repeat_password">Repeat password</div>
+            <Input type="password" value={repeatPassword} setValue = {setRepeatPassword} className="input1"/>
+            <div>
+                <button className="signin" onClick={()=>{
+                    if(password !== repeatPassword){
+                        alert("pass are not the same")
+                    }else{
+                        registration(email, password)
+                    }
+                }}>Sing up</button>
+            </div>
+        </div>
         </div>
     )
 

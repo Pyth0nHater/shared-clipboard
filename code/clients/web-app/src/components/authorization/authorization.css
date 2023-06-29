@@ -1,0 +1,118 @@
+.login{
+    text-align: center;
+}
+
+.email{
+    font-size: 50px;
+    font-family: 'VT323';
+    margin-top: 20px;
+    margin-right: 366px;
+}
+
+.password{
+    font-size: 50px;
+    font-family: 'VT323';
+    margin-top: 20px;
+    margin-right: 301px;
+}
+
+.gray_rectangle{
+    margin-top: -4px;
+    margin-left: -4px;
+    width: 726px;
+    height: 61px;
+    flex-shrink: 0;
+    background: #C4C4C4;
+    border: #000 solid 5px;
+}
+
+.input{
+    padding: 5px;
+    font-size: 45px;
+    font-family: 'VT323';
+    width: 439px;
+    height: 40px;
+    background: #C4C4C4;
+    border: #000 solid 5px;
+}
+
+.rectangle{
+    align-items: center;
+    justify-content: center;
+    margin-left: 570px;
+    margin-top: 100px;
+    width: 727px;
+    height: 470px;
+    border: 5px solid #000;
+    background: #FFF;
+    box-shadow: 10px 10px 4px 0px #000;
+}
+
+.signin{
+    font-size: 40px;
+    font-family: 'VT323';
+    margin-top: 30px;
+    width: 239px;
+    height: 55px;
+    background: #C4C4C4;
+    border: #000 solid 5px;
+}
+
+.circle{
+    margin-top: 15px;
+    margin-left: 20px;
+    display: flex;
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    flex-shrink: 0;
+    border-radius: 27px;
+    border: 3px solid #000;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.circle2{
+    margin-top: 15px;
+    margin-left: 60px;
+    display: flex;
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    flex-shrink: 0;
+    border-radius: 27px;
+    border: 3px solid #000;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Email{
+    font-size: 45px;
+    font-family: 'VT323';
+    margin-right: 375px;
+    margin-top: 5px;
+}
+
+.Password{
+    font-size:45px;
+    font-family: 'VT323';
+    margin-right: 317px;
+    margin-top: 5px;
+}
+
+.Repeat_password{
+    font-size: 45px;
+    font-family: 'VT323';
+    margin-right: 191px;
+    margin-top: 5px;
+}
+
+.input1{
+    padding: 5px;
+    font-size: 45px;
+    font-family: 'VT323';
+    width: 439px;
+    height: 30px;
+    background: #C4C4C4;
+    border: #000 solid 5px;
+}

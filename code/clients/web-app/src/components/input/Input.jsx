@@ -1,5 +1,4 @@
 import React from "react";
-import './Input.css'
 
 const Input = (props) =>{
     return(
@@ -7,7 +6,8 @@ const Input = (props) =>{
         onChange={(event)=>props.setValue(event.target.value)} 
         value={props.value}
         type={props.type} 
-        placeholder={props.placeholder} />
+        placeholder={props.placeholder} 
+        className={props.className}/>
     )
 }
 
